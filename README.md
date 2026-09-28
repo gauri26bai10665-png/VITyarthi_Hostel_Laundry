@@ -2,20 +2,26 @@
 
 ## About the Project
 
-The Hostel Laundry Management System is a straightforward application which has been developed as part of the VITyarthi project and is intended to simplify the laundry process for both students and administrators.
+The Hostel Laundry Management System is a Python-based application developed as a VITyarthi project to simplify and organize hostel laundry activities.
 
-Students are able to see the available laundry slots, book and cancel them, make complaints, and check the status of their complaints. The administrator has the capability of managing students, the laundry slots, the bookings, and the complaints.
+The system provides separate functionalities for students and administrators. Students can log in, view available laundry slots, book and cancel slots, view their bookings, submit complaints, and check the status of their complaints. Administrators can log in, view registered students, add laundry slots, view all bookings, view complaints, and update complaint status.
 
-## Technologies Used
+The application uses Python for the main programming logic, Tkinter for the graphical user interface, and SQLite for database management.
 
-- Python
-- Tkinter
-- SQLite
-- Git and GitHub
+## Objectives
+
+- To organize hostel laundry slot management.
+- To allow students to view and book available laundry slots.
+- To allow students to view and cancel their bookings.
+- To provide a complaint submission and tracking system.
+- To provide administrators with tools to manage laundry slots and complaints.
+- To store application data using an SQLite database.
+- To implement input validation and error handling.
 
 ## Main Features
 
 ### Student Module
+
 - Student login
 - View available laundry slots
 - Book a laundry slot
@@ -25,35 +31,34 @@ Students are able to see the available laundry slots, book and cancel them, make
 - View complaint status
 
 ### Admin Module
+
 - Admin login
 - View registered students
+- Add laundry slots
 - View all bookings
 - View all complaints
 - Update complaint status
-- Add laundry slots
+
+## Technologies Used
+
+- Python
+- Tkinter
+- SQLite
+- Git
+- GitHub
+- Visual Studio Code
 
 ## Project Structure
 
-The main program flow is managed by `main.py`
-- `students.py` holds functions that deal with students
-The file `admin.py` includes functions that are related to administration.
-- database.py – sets up and handles the SQLite database tables
-The file gui.py offers the Tkinter graphical user interface.
-The SQLite database called laundry.db is used by the application.
-– .gitignore stops Git from tracking unnecessary files
-
-## How the System Works
-
-Students are able to log into the system and use the student dashboard to manage their laundry bookings and complaints. Similarly, administrators can log in on their own and, using the admin dashboard, manage the laundry slots, bookings, students, and complaints.
-
-The application stores student information, laundry slots, bookings, and complaints using SQLite.
-
-## Purpose
-
-This project is mainly intended to offer a simple way of dealing with hostel laundry activities and at the same time to show how Python programming, database management, GUI development, and version control can be used.
-
-## Developed For
-
-**VITyarthi Project**
-
-**Project Title:** Hostel Laundry Management System
+```text
+VITyarthi_Hostel_Laundry/
+│
+├── main.py
+├── students.py
+├── admin.py
+├── database.py
+├── gui.py
+├── laundry.db
+├── README.md
+├── statement.md
+└── .gitignore
